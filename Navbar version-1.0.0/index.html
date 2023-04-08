@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
+
+    <!-- fontawsome icons link -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <!-- custome stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <nav class="navbar">
             <div class="nav-left">
-                <span>Nav-Left</span>
+                <i class="fa fa-bars" aria-hidden="true" onclick="toggleNavbarSideSection()"></i>
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="nav-sidebar nav-sidebar-deactive">
+
             </div>
             <div class="nav-middle">
                 
@@ -23,5 +37,8 @@
             </div>
         </nav>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
